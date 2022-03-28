@@ -3,7 +3,7 @@
 ## Waar kan je de code vinden?
 In de app folder => app.component files (.ts, .html, .scss)
 
-## What is afgewerkt?
+## Wat is afgewerkt?
 - Styling van de test kaarten en bijhorende HTML.
 - Het flex-wrap probleem. Kaarten kunnen nu gesleept worden naar verschillende locaties van de lijst, ook al staan ze in flex-wrap. Voor deze toevoeging werd er puur gebruikt gemaakt van Angular material (versie 11).
 
