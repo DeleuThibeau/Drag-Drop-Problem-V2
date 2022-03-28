@@ -53,7 +53,7 @@ global-card,
   border-radius: 5px;
   margin: 0px 0px 5px 5px;
   position: relative;
-  // pointer-events: none;
+  pointer-events: none;
 }
 
 
@@ -77,15 +77,12 @@ global-card,
   }
 
   .dtx-handle {
-    position: absolute;
-
     color: #ccc;
     pointer-events: auto;
     width: 24px;
     height: 24px;
-    right:-35px;
-    top:25px;
-    pointer-events: none;
+    cursor:move;
+    align-self: flex-start;
   }
   
 
