@@ -14,7 +14,7 @@ import {
 export class AppComponent {
   @ViewChild('dropListContainer') dropListContainer?: ElementRef;
 
-  public items: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  public items: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
   dropListReceiverElement?: HTMLElement;
   dragDropInfo?: {
@@ -49,7 +49,8 @@ export class AppComponent {
       this.dropListContainer.nativeElement.querySelector(
         '.cdk-drag-placeholder'
       );
-
+      
+    console.log(this.dragDropInfo.dragIndex, this.dragDropInfo.dropIndex)
     const receiverElement =
       this.dragDropInfo.dragIndex > this.dragDropInfo.dropIndex
         ? placeholderElement?.nextElementSibling
@@ -72,4 +73,5 @@ export class AppComponent {
     this.dropListReceiverElement = undefined;
     this.dragDropInfo = undefined;
   }
+  
 }
