@@ -1,21 +1,6 @@
 // ================================================================ //
 // Cards //
 // ================================================================ //
-// Grid
-.dtx-cards {
-    --card-width: 25%;
-    --card-margin: 1.8rem;
-    --card-insert-width: 7.5%;
-    --card-icon-size: 3.6rem;
-
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    width: calc(100% + calc(var(--card-margin) * 2));
-    margin: 0 calc(var(--card-margin) * -1) calc(var(--card-margin) * -2);
-}
 // Item
 global-card,  
 .dtx-card {
@@ -57,59 +42,73 @@ global-card,
 }
 
 
-  .dtx-card:last-child {
-    border: none;
-  }
+.dtx-card:last-child {
+  border: none;
+}
 
-  .dtx-card:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-                0 8px 10px 1px rgba(0, 0, 0, 0.14),
-                0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-  
-  .dtx-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
-    margin: 10px;
-    padding:24px
-  }
+.dtx-card:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+// ================================================================ //
+// Container //
+// ================================================================ //
 
-  .dtx-handle {
-    color: #ccc;
-    pointer-events: auto;
-    width: 24px;
-    height: 24px;
-    cursor:move;
-    align-self: flex-start;
-  }
-  
+.dtx-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+  padding:24px
+}
 
-  .cdk-drop-list {
-    display: flex;
-    padding-right: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .cdk-drag-preview {
-    box-sizing: border-box;
-    border-radius: 4px;
-    box-shadow: 0 5px 5px -3px rgba(161, 41, 41, 0.2),
-      0 8px 10px 1px rgba(141, 58, 58, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-  
-  .cdk-drag-placeholder {
-    opacity: 0.5;
-  }
-  
-  .cdk-drag-animating {
-    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
-  }
+// ================================================================ //
+// Drag handle//
+// ================================================================ //
+
+.dtx-handle {
+  color: #ccc;
+  pointer-events: auto;
+  width: 24px;
+  height: 24px;
+  cursor:move;
+  align-self: flex-start;
+}
+
+// ================================================================ //
+// Angular classes //
+// ================================================================ //
+
+.cdk-drop-list {
+  display: flex;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(161, 41, 41, 0.2),
+    0 8px 10px 1px rgba(141, 58, 58, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+// ================================================================ //
+// Media Queries //
+// ================================================================ //
  
- @media only screen and (max-width: 984px) {
-    .dtx-container {
-       padding: 0 36px;
-    }
- }
+@media only screen and (max-width: 984px) {
+  .dtx-container {
+      padding: 0 36px;
+  }
+}
  

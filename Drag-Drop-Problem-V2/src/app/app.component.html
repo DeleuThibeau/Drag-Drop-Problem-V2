@@ -1,19 +1,26 @@
+<!-- Container waar alles in zit. -->
 <div #dropListContainer class="dtx-container" cdkDropListGroup>
+
+  <!-- Droplist met daarin draggable items die worden gerendered via ngFor. -->
   <div
     *ngFor="let item of items; let i = index"
     cdkDropList
     [cdkDropListData]="i">
 
+    <!-- Kaart element die gekoppeld is aan alle dragfunctie in de .ts file. -->
     <div
       cdkDrag
       [cdkDragData]="i"
       (cdkDragEntered)="dragEntered($event)"
       (cdkDragMoved)="dragMoved($event)"
       (cdkDragDropped)="dragDropped($event)"
-      class="dtx-card"
-    >
-    
-    {{ item }}
+      class="dtx-card">
+
+      <!-- De waarde van het kaart element = nummmer dat in de kaarten zichtbaar is. -->
+      {{ item }}
+
+      <!-- De draghandle die ook in het kaart element zit 
+      => Dit element veroorzaakt de meeste problemen zoals het niet goed registreren van drags en het soms laten verdwijnen van kaarten. -->
       <div class="dtx-handle" cdkDragHandle>
         <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
           <path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
@@ -21,6 +28,5 @@
         </svg>
       </div>
     </div>
-
   </div>
 </div>
