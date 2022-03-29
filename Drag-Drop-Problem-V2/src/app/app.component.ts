@@ -82,7 +82,6 @@ export class AppComponent {
       return;
     }
     
-    console.log(receiverElement)
     // Pas display none toe op het receiver element (= kaart) => Is volgens mij de reden waarom kaarten soms verdwijnen, maar ben niet zeker.
     // receiverElement.style.display = 'none';
     this.dropListReceiverElement = receiverElement;
