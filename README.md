@@ -8,7 +8,6 @@ In de app folder => app.component files (.ts, .html, .scss)
 - Het flex-wrap probleem. Kaarten kunnen nu gesleept worden naar verschillende locaties van de lijst, ook al staan ze in flex-wrap. Voor deze toevoeging werd er puur gebruikt gemaakt van Angular material (versie 11).
 
 ## Problemen?
-- Drag handle zorgt ervoor dat de registratie van de drag niet 100% goed werkt. Hierdoor moet je vaak schudden met de muis om een kaart te kunnen plaatsen. Dit komt omdat de registratie gebeurt ten op zichte van de drag handle en niet de volledige kaart.
 - Zeldzame bug waarbij een kaart kan verdwijnen (gebeurt 1x om de 10 of 20 keren. Moeilijk om te achterhalen wat het probleem precies is, maar komt enkel voor als er een drag handle aanwezig is in de kaart)
 
 ## Wat moet er nog worden gedaan?
